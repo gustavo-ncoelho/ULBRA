@@ -1,0 +1,62 @@
+*{
+    margin: 0 auto;
+}
+
+body{
+    background-color: rgb(241, 235, 235);
+    height: 000px;
+}
+
+.divTudo{
+    font-family: Arial, sans-serif;
+}
+
+.divLinha{
+    clear: both;
+}
+/* Estilos do cabeçalho em geral */
+#divCabecalho{
+    height: 100px;
+    background-color: cadetblue;
+    padding: 20px 50px 20px 30px;
+    margin-bottom: 30px;
+}
+
+#h1TituloCabecalho{
+    float: left;
+    min-width: 50%;
+    font-size: 30px;
+    text-align: left;
+}
+
+/*Estilos Classificação*/
+
+#divClassificacao{
+    width: 65%;
+    background-color: white;
+    padding: 10px;
+}
+
+#divClassificacao h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#tableClassificacao{
+    width: 100%;
+    text-align: center;
+}
+
+/*Estilos Goleadores*/
+#divGoleadores{
+    width: 65%;
+    background-color: white;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+#tableGoleadores{
+    width: 35%;
+    text-align: center;
+}
+
