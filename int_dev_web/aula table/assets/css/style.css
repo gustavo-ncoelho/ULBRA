@@ -4,7 +4,6 @@
 
 body{
     background-color: rgb(241, 235, 235);
-    height: 000px;
 }
 
 .divTudo{
@@ -59,4 +58,29 @@ body{
     width: 35%;
     text-align: center;
 }
+
+/*Estilos Jogos*/
+#divJogos{
+    width: 65%;
+    background-color: white;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+#tableJogos{
+    width: 70%;
+    text-align: center;
+    height:150px
+}
+
+
+
+
+
+
+
+
+
+
+
 
