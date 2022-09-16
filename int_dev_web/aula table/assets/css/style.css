@@ -13,6 +13,24 @@ body{
 .divLinha{
     clear: both;
 }
+
+td{
+    font-size: 15px;
+    text-align: center;
+    font-style: bold;
+}
+
+th{
+    color: rgb(144, 142, 142);
+    font-weight: normal;
+    font-size: 17px;
+    text-align: center;
+}
+
+.h2TituloSessao{
+    margin-bottom: 10px;
+}
+
 /* Estilos do cabeçalho em geral */
 #divCabecalho{
     height: 100px;
@@ -46,6 +64,42 @@ body{
     text-align: center;
 }
 
+.imgClube{
+    width: 28px;
+    height: 28px;
+}
+
+/*Estilos Bolinhas*/
+
+.divVit{
+    height: 20px;
+    width: 20px;
+    border-radius:100%;
+    border: solid 1px black;
+    background-color:lawngreen;
+    float: right;
+    margin-right: 5px;
+}
+.divEmp{
+    height: 20px;
+    width: 20px;
+    border-radius:100%;
+    border: solid 1px black;
+    background-color:lawngreen;
+    float: right;
+    margin-right: 5px;
+}
+.divDer{
+    height: 20px;
+    width: 20px;
+    border-radius:100%;
+    border: solid 1px black;
+    background-color:lawngreen;
+    float: right;
+    margin-right: 5px;
+}
+/*----------------*/
+
 /*Estilos Goleadores*/
 #divGoleadores{
     width: 65%;
@@ -55,8 +109,26 @@ body{
 }
 
 #tableGoleadores{
-    width: 35%;
+    width: 100%;
     text-align: center;
+}
+
+#tableGoleadores th{
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 60px;
+}
+
+.tdJogador{
+    text-align: left;
+    width: 90%;
+
+}
+
+.spanNomeClube{
+    color: darkgrey;
+    font-size: 12px;
+    align-items: center;
 }
 
 /*Estilos Jogos*/
