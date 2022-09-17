@@ -80,6 +80,13 @@ th{
     float: right;
     margin-right: 5px;
 }
+
+.divVit h1{
+    font-weight: 100;
+    text-align: center;
+    align-items: center;
+    font-size: 125%;
+}
 .divEmp{
     height: 20px;
     width: 20px;
@@ -89,6 +96,14 @@ th{
     float: right;
     margin-right: 5px;
 }
+
+.divEmp h1{
+    font-weight: 100;
+    text-align: center;
+    align-items: center;
+    font-size: 125%;
+}
+
 .divDer{
     height: 20px;
     width: 20px;
@@ -98,6 +113,14 @@ th{
     float: right;
     margin-right: 5px;
 }
+
+.divDer h1{
+    font-weight: 100;
+    text-align: center;
+    align-items: center;
+    font-size: 125%;
+}
+
 /*----------------*/
 
 /*Estilos Goleadores*/
@@ -140,12 +163,34 @@ th{
 }
 
 #tableJogos{
-    width: 70%;
-    text-align: center;
-    height:150px
+    width: 100%;
 }
 
+#tableJogos .tdTableJogos{
+    padding: 5px 5px 5px 5px;
+}
 
+#tableJogos .tableJogo{
+    width: 100%;
+}
+
+.tableJogo .thTableJogo{
+    text-align: left;
+}
+
+.tableJogo .tdClube{
+    text-align: left;
+    width: 80%;
+}
+
+.tableJogo .tdHorario{
+    text-align: center;
+    font-size: 10px;
+}
+
+#tableJogos th, #tableJogos td{
+    border-bottom: 0px;
+}
 
 
 
