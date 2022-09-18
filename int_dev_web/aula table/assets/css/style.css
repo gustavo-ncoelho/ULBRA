@@ -18,13 +18,20 @@ td{
     font-size: 15px;
     text-align: center;
     font-style: bold;
+    font-weight: 500;
 }
 
 th{
     color: rgb(144, 142, 142);
-    font-weight: normal;
+    font-weight: 530;
     font-size: 17px;
     text-align: center;
+}
+
+table, td, th{
+    border-bottom: 1px solid rgb(218, 218, 218);
+    border-collapse: collapse;
+    padding: 7px;
 }
 
 .h2TituloSessao{
@@ -61,12 +68,16 @@ th{
 
 #tableClassificacao{
     width: 100%;
-    text-align: center;
+    text-align: center;    
 }
 
 .imgClube{
     width: 28px;
     height: 28px;
+}
+
+.divBolinhas{
+    width: 85%;
 }
 
 /*Estilos Bolinhas*/
@@ -75,50 +86,53 @@ th{
     height: 20px;
     width: 20px;
     border-radius:100%;
-    border: solid 1px black;
-    background-color:lawngreen;
+    background-color:rgb(19, 227, 50);
     float: right;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .divVit h1{
     font-weight: 100;
     text-align: center;
     align-items: center;
+    justify-content: center;
     font-size: 125%;
+    color: whitesmoke;
 }
 .divEmp{
     height: 20px;
     width: 20px;
     border-radius:100%;
-    border: solid 1px black;
-    background-color:lawngreen;
+    background-color:rgb(144, 140, 140);
     float: right;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .divEmp h1{
     font-weight: 100;
     text-align: center;
     align-items: center;
+    justify-content: center;
     font-size: 125%;
+    color: whitesmoke;
 }
 
 .divDer{
     height: 20px;
     width: 20px;
     border-radius:100%;
-    border: solid 1px black;
-    background-color:lawngreen;
+    background-color:rgb(255, 38, 38);
     float: right;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .divDer h1{
     font-weight: 100;
     text-align: center;
     align-items: center;
+    justify-content: center;
     font-size: 125%;
+    color: whitesmoke;
 }
 
 /*----------------*/
