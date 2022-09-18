@@ -1,0 +1,253 @@
+body{
+    background-color: aquamarine;
+    text-align:center; 
+    width:100%; 
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+
+.img1 img{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.divTudo{
+    border: 5px solid black;
+    width: 70%;
+}
+
+.cabecalho{
+    background-color: green;
+    border-radius: 15px;
+    width: 80%;
+    margin: 0 auto;           
+}
+
+.info1{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.infoPessoais span{
+    font-weight: 600;
+    color: blue
+}
+
+.infoPessoais{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.img1{
+    margin-right: 100px;
+}
+
+.formacao{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.formacao p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.formacao .linha{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.dadosF p{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;    
+}
+
+.dadosF span{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    font-weight: 600;
+    color: blue;
+}
+
+.dadosF{
+    margin-top: 15px;
+}
+
+.infosGerais{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 30px;
+}
+
+.coluna1{
+    width: 50%; 
+    padding: 0px;
+}
+
+.tituloHabil{
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.tituloHabil p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.linha2{
+    width: 90%;
+    height: 3px;
+    background-color: black;
+    margin-left: 5%;
+}
+
+.valorHabil1{
+    margin-top: 16px;
+    float: left;
+}
+
+.valorHabil1_1{
+    margin-top: 16px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.valorHabil1_1 div{
+    width: 12px;
+    height: 12px;
+    background-color: #3b5998;
+    border-radius: 90%;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-top: 1px;
+    display: inline-block;
+}
+
+.valorHabil1 div{
+    width: 12px;
+    height: 12px;
+    background-color: #3b5998;
+    border-radius: 90%;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-top: 1px;
+    display: inline-block;
+}
+
+.valorHabil1_1 .semPonto{
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 90%;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-top: 1px;
+    display: inline-block;
+}
+
+.valorHabil1 .semPonto{
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 90%;
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-top: 1px;
+    display: inline-block;
+}
+
+.dadosHabilTudo{
+    width: 100%;
+}
+
+.textoHabil{
+    float: left;
+    margin: 0px;
+    width: 35%;
+    margin-top: 15px;
+}
+
+.linhaVert{
+    height: 600px;
+    width: 1px;
+    background-color: black;
+    margin-top: 57px;
+    margin-bottom: 30px;
+}
+
+.expProfTudo{
+    width: 50%; 
+    padding: 0px;
+    float: left;
+}
+
+.expProfTitulo{
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.expProfTitulo p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.linha3{
+    width: 90%;
+    height: 3px;
+    background-color: black;
+    margin-left: 5%;
+}
+
+.coluna1 .tituloPerso{
+    width: 100%;
+    margin-left: 20px;
+    clear: both;
+}
+
+.tituloPerso p{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.linha4{
+    width: 90%;
+    height: 3px;
+    background-color: black;
+    margin-left: 5%;
+}
+
+#bolinha1{
+    height: 40px
+}
+
+#bolinha2{
+    margin-bottom: 30px;
+}
+
+.exp{
+    text-align: justify;
+    margin: 25px 25px 20px 20px;
+}
+
+
+
