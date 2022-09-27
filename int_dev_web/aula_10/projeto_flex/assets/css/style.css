@@ -1,0 +1,21 @@
+body{
+    margin: 0 auto;
+}
+
+nav{
+    background-color: lightgray;
+}
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.flexContainer div{
+    border: solid 1px black;
+}
+
+.itemMenu{
+    padding: 10px;
+}
