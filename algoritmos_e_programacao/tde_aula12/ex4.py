@@ -8,7 +8,9 @@ media_total = soma/10
 
 print(f"\nA média das notas dos alunos é de: {media_total}")
 
+
 print("-------------------------")
+
 
 notas = []
 soma = 0
