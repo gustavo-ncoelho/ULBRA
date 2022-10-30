@@ -1,0 +1,16 @@
+#img1Div{
+    display: flex;
+    justify-content: center;
+}
+
+#header-bg{
+    background-color: cadetblue !important;
+}
+
+#h1Header{
+    color: #ffff;
+}
+
+#titulo1{
+    margin-bottom: 20px;
+}
