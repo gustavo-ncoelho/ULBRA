@@ -26,6 +26,5 @@ for idade in idades:
     else:
         continue
 
-for x in index:
-    for altura in alturas[x]:
-        print("sada")
+
+
