@@ -4,7 +4,7 @@ soma30 = 0
 
 print("Digite 8 valores inteiros:")
 for i in range(8):
-    lista.append(input())
+    lista.append(int(input()))
 
 print(lista)
 
@@ -15,7 +15,7 @@ for x in lista:
         continue
 
 for z in lista30:
-    soma = soma + z
+    soma30 = soma30 + z
 
-print(f"Soma dos numeros")
+print(f"Soma dos numeros maiores que 30 é {soma30}")
 
