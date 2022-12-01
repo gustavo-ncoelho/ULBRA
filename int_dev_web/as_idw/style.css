@@ -1,0 +1,24 @@
+#img1Div{
+    display: flex;
+    justify-content: center;
+}
+
+#header-bg{
+    background-color: orange !important;
+}
+
+#h1Header{
+    color: whitesmoke;
+}
+
+#titulo1{
+    margin-bottom: 20px;
+}
+
+#divContainer{
+    background: rgba(255, 132, 0, 0.3)
+}
+
+#primeiroContainer{
+    margin-bottom: 30px;
+}
