@@ -26,13 +26,13 @@
                 <h2>Altos Menu</h2>
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="menuHome">Home</a>
+                        <a class="nav-link" href="?page=home" id="menuHome">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="menuProdutos">Produtos</a>
+                        <a class="nav-link" href="?page=produtos" id="menuProdutos">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="menuContatos">Contatos</a>
+                        <a class="nav-link" href="?page=contatos" id="menuContatos">Contatos</a>
                 </ul>
             </nav>
 
