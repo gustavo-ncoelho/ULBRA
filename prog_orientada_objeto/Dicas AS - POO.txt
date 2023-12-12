@@ -1,0 +1,84 @@
+Criar projeto com as dependencias:
+- SpringBoot DevTools
+- Lombok
+- Spring Web
+- Spring Data JPA
+- MySQL Driver
+
+-----------------------------------------------------------------------------------------------------
+Dependencia Lombok:
+
+@Data -> Cria getters e Setters
+
+@Entity -> Transforma um classe em uma tabela (Usar nas classes de dados)
+
+@NoArgsConstructor -> Cria um construtor vazio (Algumas funções do Hibernate necessitam disso)
+
+@AllArgsConstructor -> Cria um construtor com todos os atributos da classe
+-----------------------------------------------------------------------------------------------------
+
+Em uma entity, usar:
+
+@Id
+@GenetaredValue(strategy = GenerationType.AUTO)
+
+Antes da classe usar:
+@Entity
+NoArgsConstructor
+-----------------------------------------------------------------------------------------------------
+
+No DataGrip usar:
+
+create database NomeDataBase;
+
+use NomeDataBase;
+
+-----------------------------------------------------------------------------------------------------
+
+Criar interface Repository q extends JpaRepository <Cliente, integer....> {}
+## Esse JpaRepository é quem bota as funções do Banco De Dados
+
+-----------------------------------------------------------------------------------------------------
+								        _
+Cardinalidade:								 \
+								         |
+1:1 @OneToOne								 |
+1:N @OneToMany ou @ManyToOne						 |
+N:N @ManyToMany								 |
+									 |
+Colocar isso em cima do atributo que se relacionará			  \	ISSO NÃO CAI NA AS
+									  /
+Para relacionar colunas:	 					 |
+									 |
+@JoinColumn(name = "cliente_id")                                         |
+                                                                         |
+Exemplo:                                                                 |
+                                                                         |
+@OneToMany                                                               |
+@JoinColumn(name = "cliente_id")                                         |
+private List<Produto> produtor;                                         _/
+									
+-----------------------------------------------------------------------------------------------------
+
+Projeto deve ter as pastas:
+- Controllers -> Controladores SEM regras de negócios
+- Entities -> Aqui vai as classes de dados (Cliente, Autor, Produto....)
+- Repositories -> Interface que extenderá JpaRepository e irá herdar todas as funções do banco de dados (save, update,...)
+- Services -> Aqui vai os métodos COM as regras de negócios das requisições
+- DTOS -> Aqui ficarão os Data Transfer Object
+- Exceptions -> Aqui vai as exceptions (Na criação da classe, usar ControllerAdvice 
+
+-----------------------------------------------------------------------------------------------------
+
+OBS: Rodar banco com XAMP
+OBS: NO dataGrip criar um DataSource MySQL
+OBS: Antes de tudo dar um -> create database BancoDeDados <- na Query do DataGrip
+
+Deve-se mexer no application.properties!!!
+url = jdbc:mysql://localhost:3306/NomeDoBanco
+username = root
+
+-----------------------------------------------------------------------------------------------------
+
+O DTO será usado para fazer com que uma determinada classe Entity, retorne somente os atributos dejesados
+Por exemplo, que uma classe Autor, não retorne o ID no GET mas somente Nome e Idade

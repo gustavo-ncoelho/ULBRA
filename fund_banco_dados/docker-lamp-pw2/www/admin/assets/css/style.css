@@ -1,0 +1,19 @@
+.wrapper-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container-login {
+    width: 30vw;
+}
+
+.header-admin {
+    background-color: #ededed;
+}
+
+.header-admin-nav {
+    background-color: #2a3f54;
+}
+

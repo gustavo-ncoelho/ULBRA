@@ -1,0 +1,6 @@
+SELECT nomeCidade FROM Cidades
+WHERE idCidade IN(
+    SELECT idCidade FROM Clientes 
+	GROUP BY idCidade
+	HAVING AVG(idadeCliente) > 28
+    )

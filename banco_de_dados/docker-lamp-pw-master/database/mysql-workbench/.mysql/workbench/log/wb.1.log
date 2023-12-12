@@ -1,0 +1,79 @@
+22:20:04 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+	base dir: /usr/share/mysql-workbench
+	plugin path: /usr/lib/mysql-workbench/plugins
+	struct path: /usr/share/mysql-workbench/grt
+	module path: /usr/lib/mysql-workbench/modules
+	library path: /usr/share/mysql-workbench/libraries
+	user data dir: /config/.mysql/workbench
+	open at start: 
+	open type: 
+	run at startup: 
+	run type: 
+	Force SW rendering: No
+	Force OpenGL: No
+	quit when done: No
+22:20:04 [INF][      WBContext]: WbContext::init
+22:20:06 [INF][            WBA]: Looking for extension modules for WBA...
+22:20:06 [INF][            WBA]: 0 extension modules found
+22:20:07 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+22:20:07 [WRN][            grt]: /config/.mysql/workbench/server_instances.xml:11: link '8f617d8e-38a3-11ee-af7d-0242ac130005' <object GrtObject> key=owner could not be resolved
+22:20:07 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+22:20:07 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.34 CE build 3263449 (64 bit)
+	Configuration Directory: /config/.mysql/workbench
+	Data Directory: /usr/share/mysql-workbench
+	Cairo Version: 1.16.0
+	OS:  x86_64
+	CPU: 12x AMD Ryzen 5 5500U with Radeon Graphics (2095.991MHz) - 4.51GiB RAM
+No video adapter info available
+	Distribution: Ubuntu 22.04.2 LTS
+
+	Fips mode enabled: no
+
+22:20:07 [INF][    WQE backend]: Found auto-save workspace /config/.mysql/workbench/sql_workspaces/mysql-1.autosave
+22:20:07 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
+22:20:50 [INF][   WBContext UI]: Opening Migration Wizard...
+22:20:50 [WRN][         mforms]: Resource file not found: migration_win.png
+22:20:50 [WRN][            grt]: in com.mysql.rdbms.sql92.driver.odbc_dsn: unserialized XML contains invalid member db.mgmt.PythonDBAPIDriver::accessibilityNameLoaded 0/0 new non-MySQL connections
+22:20:50 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+22:20:50 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+22:20:50 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+22:20:50 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+22:20:50 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+22:20:50 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+22:20:50 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+22:20:50 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+22:20:50 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+22:20:50 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+22:20:50 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+22:20:50 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+22:20:50 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+22:20:50 [WRN][         mforms]: Resource file not found: migration_check_open_win.png
+22:25:31 [ERR][               ]: 
+unhandled exception (type Glib::Error) in signal handler:
+domain: gtk-icon-theme-error-quark
+code  : 0
+what  : Icon 'folder' not present in theme Yaru
+
+22:25:35 [ERR][               ]: 
+unhandled exception (type Glib::Error) in signal handler:
+domain: gtk-icon-theme-error-quark
+code  : 0
+what  : Icon 'folder' not present in theme Yaru
+
+22:27:46 [ERR][SQL Editor Form]: SqlEditorForm: exception in do_connect method: Exception: Unable to connect to localhost
+22:27:46 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Unable to connect to localhost
+22:27:46 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Unable to connect to localhost
+22:27:46 [ERR][    WQE backend]: Got an exception during connection: Unable to connect to localhost
+22:27:46 [ERR][SQL Editor Form]: SQL editor could not be connected: Unable to connect to localhost
+22:27:46 [ERR][SQL Editor Form]: Your connection attempt failed for user 'root' to the MySQL server at database:3306:
+  Unable to connect to localhost
+
+Please:
+1 Check that MySQL is running on address database
+2 Check that MySQL is reachable on port 3306 (note: 3306 is the default, but this can be changed)
+3 Check the user root has rights to connect to database from your address (MySQL rights define what clients can connect to the server and from which machines) 
+4 Make sure you are both providing a password if needed and using the correct password for database connecting from the host address you're connecting from
+22:30:40 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'172.19.0.5' (using password: NO)
+22:30:40 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'172.19.0.5' (using password: NO)
+22:30:46 [INF][SQL Editor Form]: Opened connection 'mysql' to MySQL Community Server - GPL version 8.0.32

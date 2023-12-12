@@ -1,0 +1,48 @@
+CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+);
+
+CREATE TABLE Clientes (
+    idCliente INT PRIMARY KEY,
+    nomeCliente VARCHAR(50),
+    idadeCliente INT,
+    idCidade INT,
+    FOREIGN KEY (idCidade) REFERENCES Cidades(idCidade)
+);
+
+
+CREATE TABLE Pedidos (
+    idPedido INT PRIMARY KEY,
+    idCliente INT,
+    dataPedido DATE,
+    valorPedido DECIMAL(10, 2),
+    FOREIGN KEY (idCliente) REFERENCES Clientes(idCliente)
+);
+
+-- Inserção de dados na tabela "Cidades"
+INSERT INTO Cidades (idCidade, nomeCidade)
+VALUES
+    (1, 'São Paulo'),
+    (2, 'Rio de Janeiro'),
+    (3, 'Belo Horizonte'),
+    (4, 'Porto Alegre');
+
+-- Inserção de dados na tabela "Clientes"
+INSERT INTO Clientes (idCliente, nomeCliente, idadeCliente, idCidade)
+VALUES
+    (1, 'João', 30, 1),
+    (2, 'Maria', 25, 2),
+    (3, 'Pedro', 35, 3),
+    (4, 'Ana', 28, 4),
+    (5, 'Paula', 30, 1);
+
+-- Inserção de dados na tabela "Pedidos"
+INSERT INTO Pedidos (idPedido, idCliente, dataPedido, valorPedido)
+VALUES
+    (101, 1, '2023-07-25', 150.00),
+    (102, 2, '2023-07-26', 250.50),
+    (103, 3, '2023-07-27', 180.75),
+    (104, 1, '2023-07-27', 75.25),
+    (105, 4, '2023-07-28', 300.00),
+    (106, 5, '2023-07-28', 220.00);

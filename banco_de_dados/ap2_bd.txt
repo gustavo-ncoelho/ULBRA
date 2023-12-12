@@ -1,0 +1,154 @@
+
+
+-------------------- COLLECTIONS ----------------------
+
+_______________________________________________________
+
+COLLECTION CLIENTES:
+_______________________________________________________
+
+{
+  "_id": ObjectId("cliente_id"),
+  "nome": "Gustavo",
+  "endereco": "Praça XV de Novembro numero 120",
+  "localizacao": {
+    "type": "Point",
+    "coordinates": [123456, 123456789]
+  }
+}
+_______________________________________________________
+
+COLLECTION RESTAURANTES:
+_______________________________________________________
+
+{
+  "_id": ObjectId("restaurante_id"),
+  "nome": "Restaurante 1",
+  "endereco": "Borges de Medeiros numero 8000",
+  "localizacao": {
+    "type": "Point",
+    "coordinates": [2345678, 987654321]
+  }
+}
+_______________________________________________________
+
+COLLECTION PRODUTOS:
+_______________________________________________________
+
+{
+  "_id": ObjectId("produto_id"),
+  "nome": "Pizza",
+  "descricao": "Pizza de calabresa",
+  "preco": 49.99
+}
+_______________________________________________________
+
+COLLECTION PEDIDOS:
+_______________________________________________________
+
+{
+  "_id": ObjectId("pedido_id"),
+  "cliente_id": ObjectId("cliente_id"),
+  "restaurante_id": ObjectId("restaurante_id"),
+  "produtos": [
+    {
+      "produto_id": ObjectId("produto_id"),
+      "quantidade": 2
+    },
+  ],
+  "status": "Pendente",
+  "total": 99.98
+}
+_____________________________________________________________________________________________
+
+
+
+---------------------------------------- RELATÓRIOS -----------------------------------------
+
+
+_____________________________________________________________________________________________
+
+Para encontrar restaurantes próximos a uma determinada localização (latitude, longitude):
+_____________________________________________________________________________________________
+
+db.restaurantes.find({
+   localizacao: {
+      $near: {
+         $geometry: {
+            type: "Point",
+            coordinates: [12345678, 987654321]
+         },
+         $maxDistance: 5000
+      }
+   }
+})
+_____________________________________________________________________________________________
+
+Relatório de busque todos os pedidos por cliente:
+_____________________________________________________________________________________________
+
+
+
+
+db.pedidos.find({ cliente_id: ObjectId("cliente_id") })
+
+
+
+_____________________________________________________________________________________________
+
+Relatório que mostra todos os pedidos por cliente, mostrando os itens pertencentes ao pedido:
+_____________________________________________________________________________________________
+
+db.pedidos.aggregate([
+   {
+      $match: { cliente_id: ObjectId("cliente_id") }
+   },
+   {
+      $lookup: {
+         from: "produtos",
+         localField: "produtos.produto_id",
+         foreignField: "_id",
+         as: "itens"
+      }
+   }
+])
+_____________________________________________________________________________________________
+
+Relatório que busque pedidos por períodos definidos (data de início e fim):
+_____________________________________________________________________________________________
+
+db.pedidos.find({
+   data: {
+      $gte: ISODate("data_inicio"),
+      $lte: ISODate("data_fim")
+   }
+})
+_____________________________________________________________________________________________
+
+Relatório que mostra uma lista de todos os clientes com o total de pedidos:
+_____________________________________________________________________________________________
+
+db.pedidos.aggregate([
+   {
+      $group: {
+         _id: "$cliente_id",
+         totalPedidos: { $sum: 1 }
+      }
+   },
+   {
+      $lookup: {
+         from: "clientes",
+         localField: "_id",
+         foreignField: "_id",
+         as: "cliente"
+      }
+   },
+   {
+      $project: {
+         _id: 0,
+         cliente: 1,
+         totalPedidos: 1
+      }
+   }
+])
+_____________________________________________________________________________________________

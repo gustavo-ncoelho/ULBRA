@@ -1,0 +1,151 @@
+00:02:39 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+	base dir: /usr/share/mysql-workbench
+	plugin path: /usr/lib/mysql-workbench/plugins
+	struct path: /usr/share/mysql-workbench/grt
+	module path: /usr/lib/mysql-workbench/modules
+	library path: /usr/share/mysql-workbench/libraries
+	user data dir: /config/.mysql/workbench
+	open at start: 
+	open type: 
+	run at startup: 
+	run type: 
+	Force SW rendering: No
+	Force OpenGL: No
+	quit when done: No
+00:02:39 [INF][      WBContext]: WbContext::init
+00:02:42 [INF][            WBA]: Looking for extension modules for WBA...
+00:02:42 [INF][            WBA]: 0 extension modules found
+00:02:43 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+00:02:43 [WRN][            grt]: Duplicate plugin name wb.tools.cmdlineClient	There is more than one plugin with the name wb.tools.cmdlineClient (in PyWbUtils and PyWbUtils).
+00:02:43 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Linux/Unix version 8.0.34 CE build 3263449 (64 bit)
+	Configuration Directory: /config/.mysql/workbench
+	Data Directory: /usr/share/mysql-workbench
+	Cairo Version: 1.16.0
+	OS:  x86_64
+	CPU: 12x AMD Ryzen 5 5500U with Radeon Graphics (2095.986MHz) - 4.51GiB RAM
+No video adapter info available
+	Distribution: Ubuntu 22.04.2 LTS
+
+	Fips mode enabled: no
+
+00:02:44 [WRN][       WBModule]: OS not found on supported OS list. OS string: ' x86_64'
+00:07:03 [INF][SQL Editor Form]: Opened connection 'mysql' to MySQL Community Server - GPL version 8.0.32
+00:07:03 [INF][  column_widths]: Initializing column width cache for mysql
+00:11:30 [ERR][ sqlide-history]: Can't open SQL history file /config/.mysql/workbench/sql_history/2023-08-12
+00:11:30 [ERR][SQL Editor Form]: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+00:11:49 [ERR][SQL Editor Form]: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+00:12:13 [ERR][SQL Editor Form]: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+00:12:22 [ERR][SQL Editor Form]: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+00:12:37 [ERR][SQL Editor Form]: Error Code: 1064
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+' at line 1
+00:12:37 [WRN][wb_query_analysis_grt.py:visualExplain:532]: Could not execute EXPLAIN CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): ("You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE Cidades (\n    idCidade INT PRIMARY KEY,\n    nomeCidade VARCHAR(50)\n' at line 1", 1064)
+00:13:09 [ERR][SQL Editor Form]: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+00:13:16 [ERR][SQL Editor Form]: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+00:13:25 [ERR][SQL Editor Form]: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+00:13:27 [ERR][SQL Editor Form]: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+00:13:28 [ERR][SQL Editor Form]: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+00:13:30 [ERR][SQL Editor Form]: Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+00:13:36 [ERR][SQL Editor Form]: Error Code: 1064
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE Clientes (
+    idCliente INT PRIMARY KEY,
+    nomeCliente VARCHAR(5' at line 1
+00:13:36 [WRN][wb_query_analysis_grt.py:visualExplain:532]: Could not execute EXPLAIN CREATE TABLE Clientes (
+    idCliente INT PRIMARY KEY,
+    nomeCliente VARCHAR(50),
+    idadeCliente INT,
+    idCidade INT,
+    FOREIGN KEY (idCidade) REFERENCES Cidades(idCidade)
+): ("You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE Clientes (\n    idCliente INT PRIMARY KEY,\n    nomeCliente VARCHAR(5' at line 1", 1064)
+00:22:39 [ERR][SQL Editor Form]: Error Code: 1050. Table 'cidades' already exists
+00:24:59 [ERR][SQL Editor Form]: Error Code: 1050. Table 'cidades' already exists
+00:25:23 [ERR][SQL Editor Form]: Error Code: 1062. Duplicate entry '101' for key 'pedidos.PRIMARY'
+00:25:26 [ERR][SQL Editor Form]: Error Code: 1050. Table 'cidades' already exists
+00:25:28 [ERR][SQL Editor Form]: Error Code: 1050. Table 'cidades' already exists
+00:27:56 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:27:56 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:27:56 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:32:48 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:32:48 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:32:49 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:32:49 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:32:50 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:32:59 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:18 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:25 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:25 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:26 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:26 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:28 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:29 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:29 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:31 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:36 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:36 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:37 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:39 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:39 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:41 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:41 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:42 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:45 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:45 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:45 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:46 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:46 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:47 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:38:50 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:42:05 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:42:06 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:42:06 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:42:36 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:43:07 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:43:09 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:43:09 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:43:11 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:43:15 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:43:18 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:43:47 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:43:47 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:43:47 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:44:04 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:44:05 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:44:06 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:44:07 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:44:07 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:44:43 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:46:12 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:46:15 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:46:23 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:47:46 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:53:25 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:53:26 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:53:26 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:53:26 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:53:28 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:53:36 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:53:36 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:53:37 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:53:37 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:53:40 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:53:43 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:53:52 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:53:59 [ERR][      WBContext]: WBContext: exception in flush idle task: Exception: 
+00:54:09 [ERR][SQL Editor Form]: Error Code: 1054. Unknown column 'idClientes' in 'field list'
+00:54:13 [ERR][SQL Editor Form]: Error Code: 1054. Unknown column 'idClientes' in 'field list'

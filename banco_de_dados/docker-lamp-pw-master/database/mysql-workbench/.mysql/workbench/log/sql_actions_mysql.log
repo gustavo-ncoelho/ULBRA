@@ -1,0 +1,469 @@
+[1, 00:11:30] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[1, 00:11:30] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[2, 00:11:49] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[2, 00:11:49] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[3, 00:12:13] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[3, 00:12:13] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[4, 00:12:22] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[4, 00:12:22] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[5, 00:12:37] EXPLAIN CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Executing 
+[5, 00:12:37] EXPLAIN CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Error Code: 1064
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+' at line 1
+[6, 00:13:09] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[6, 00:13:09] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[7, 00:13:16] CREATE TABLE Clientes (
+    idCliente INT PRIMARY KEY,
+    nomeCliente VARCHAR(50),
+    idadeCliente INT,
+    idCidade INT,
+    FOREIGN KEY (idCidade) REFERENCES Cidades(idCidade)
+): Running...
+[7, 00:13:16] CREATE TABLE Clientes (
+    idCliente INT PRIMARY KEY,
+    nomeCliente VARCHAR(50),
+    idadeCliente INT,
+    idCidade INT,
+    FOREIGN KEY (idCidade) REFERENCES Cidades(idCidade)
+): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[8, 00:13:25] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[8, 00:13:25] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[9, 00:13:27] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[9, 00:13:27] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[10, 00:13:28] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[10, 00:13:28] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[11, 00:13:30] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[11, 00:13:30] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Error Code: 1046. No database selected
+Select the default DB to be used by double-clicking its name in the SCHEMAS list in the sidebar.
+[12, 00:13:36] EXPLAIN CREATE TABLE Clientes (
+    idCliente INT PRIMARY KEY,
+    nomeCliente VARCHAR(50),
+    idadeCliente INT,
+    idCidade INT,
+    FOREIGN KEY (idCidade) REFERENCES Cidades(idCidade)
+): Executing 
+[12, 00:13:36] EXPLAIN CREATE TABLE Clientes (
+    idCliente INT PRIMARY KEY,
+    nomeCliente VARCHAR(50),
+    idadeCliente INT,
+    idCidade INT,
+    FOREIGN KEY (idCidade) REFERENCES Cidades(idCidade)
+): Error Code: 1064
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CREATE TABLE Clientes (
+    idCliente INT PRIMARY KEY,
+    nomeCliente VARCHAR(5' at line 1
+[13, 00:18:33] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[13, 00:18:33] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): 0 row(s) affected
+[14, 00:18:33] CREATE TABLE Clientes (
+    idCliente INT PRIMARY KEY,
+    nomeCliente VARCHAR(50),
+    idadeCliente INT,
+    idCidade INT,
+    FOREIGN KEY (idCidade) REFERENCES Cidades(idCidade)
+): Running...
+[14, 00:18:33] CREATE TABLE Clientes (
+    idCliente INT PRIMARY KEY,
+    nomeCliente VARCHAR(50),
+    idadeCliente INT,
+    idCidade INT,
+    FOREIGN KEY (idCidade) REFERENCES Cidades(idCidade)
+): 0 row(s) affected
+[15, 00:18:33] CREATE TABLE Pedidos (
+    idPedido INT PRIMARY KEY,
+    idCliente INT,
+    dataPedido DATE,
+    valorPedido DECIMAL(10, 2),
+    FOREIGN KEY (idCliente) REFERENCES Clientes(idCliente)
+): Running...
+[15, 00:18:33] CREATE TABLE Pedidos (
+    idPedido INT PRIMARY KEY,
+    idCliente INT,
+    dataPedido DATE,
+    valorPedido DECIMAL(10, 2),
+    FOREIGN KEY (idCliente) REFERENCES Clientes(idCliente)
+): 0 row(s) affected
+[16, 00:18:33] INSERT INTO Cidades (idCidade, nomeCidade)
+VALUES
+    (1, 'São Paulo'),
+    (2, 'Rio de Janeiro'),
+    (3, 'Belo Horizonte'),
+    (4, 'Porto Alegre'): Running...
+[16, 00:18:33] INSERT INTO Cidades (idCidade, nomeCidade)
+VALUES
+    (1, 'São Paulo'),
+    (2, 'Rio de Janeiro'),
+    (3, 'Belo Horizonte'),
+    (4, 'Porto Alegre'): 4 row(s) affected
+Records: 4  Duplicates: 0  Warnings: 0
+[17, 00:18:33] INSERT INTO Clientes (idCliente, nomeCliente, idadeCliente, idCidade)
+VALUES
+    (1, 'João', 30, 1),
+    (2, 'Maria', 25, 2),
+    (3, 'Pedro', 35, 3),
+    (4, 'Ana', 28, 4),
+    (5, 'Paula', 30, 1): Running...
+[17, 00:18:34] INSERT INTO Clientes (idCliente, nomeCliente, idadeCliente, idCidade)
+VALUES
+    (1, 'João', 30, 1),
+    (2, 'Maria', 25, 2),
+    (3, 'Pedro', 35, 3),
+    (4, 'Ana', 28, 4),
+    (5, 'Paula', 30, 1): 5 row(s) affected
+Records: 5  Duplicates: 0  Warnings: 0
+[18, 00:18:34] INSERT INTO Pedidos (idPedido, idCliente, dataPedido, valorPedido)
+VALUES
+    (101, 1, '2023-07-25', 150.00),
+    (102, 2, '2023-07-26', 250.50),
+    (103, 3, '2023-07-27', 180.75),
+    (104, 1, '2023-07-27', 75.25),
+    (105, 4, '2023-07-28', 300.00),
+    (106, 5, '2023-07-28', 220.00): Running...
+[18, 00:18:34] INSERT INTO Pedidos (idPedido, idCliente, dataPedido, valorPedido)
+VALUES
+    (101, 1, '2023-07-25', 150.00),
+    (102, 2, '2023-07-26', 250.50),
+    (103, 3, '2023-07-27', 180.75),
+    (104, 1, '2023-07-27', 75.25),
+    (105, 4, '2023-07-28', 300.00),
+    (106, 5, '2023-07-28', 220.00): 6 row(s) affected
+Records: 6  Duplicates: 0  Warnings: 0
+[19, 00:18:49] COMMIT: Running...
+[19, 00:18:49] COMMIT: 0 row(s) affected
+[20, 00:21:13] Apply changes to aula_banco_dados: Applying object changes ...
+[20, 00:21:16] Applying changes to aula_banco_dados...: 
+[20, 00:21:16] : Changes applied to aula_banco_dados
+[20, 00:21:20] Apply changes to aula_banco_dados: Changes applied
+[21, 00:21:30] COMMIT: Running...
+[21, 00:21:30] COMMIT: 0 row(s) affected
+[22, 00:21:41] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[22, 00:21:41] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): 0 row(s) affected
+[23, 00:21:41] CREATE TABLE Clientes (
+    idCliente INT PRIMARY KEY,
+    nomeCliente VARCHAR(50),
+    idadeCliente INT,
+    idCidade INT,
+    FOREIGN KEY (idCidade) REFERENCES Cidades(idCidade)
+): Running...
+[23, 00:21:41] CREATE TABLE Clientes (
+    idCliente INT PRIMARY KEY,
+    nomeCliente VARCHAR(50),
+    idadeCliente INT,
+    idCidade INT,
+    FOREIGN KEY (idCidade) REFERENCES Cidades(idCidade)
+): 0 row(s) affected
+[24, 00:21:41] CREATE TABLE Pedidos (
+    idPedido INT PRIMARY KEY,
+    idCliente INT,
+    dataPedido DATE,
+    valorPedido DECIMAL(10, 2),
+    FOREIGN KEY (idCliente) REFERENCES Clientes(idCliente)
+): Running...
+[24, 00:21:41] CREATE TABLE Pedidos (
+    idPedido INT PRIMARY KEY,
+    idCliente INT,
+    dataPedido DATE,
+    valorPedido DECIMAL(10, 2),
+    FOREIGN KEY (idCliente) REFERENCES Clientes(idCliente)
+): 0 row(s) affected
+[25, 00:21:41] INSERT INTO Cidades (idCidade, nomeCidade)
+VALUES
+    (1, 'São Paulo'),
+    (2, 'Rio de Janeiro'),
+    (3, 'Belo Horizonte'),
+    (4, 'Porto Alegre'): Running...
+[25, 00:21:41] INSERT INTO Cidades (idCidade, nomeCidade)
+VALUES
+    (1, 'São Paulo'),
+    (2, 'Rio de Janeiro'),
+    (3, 'Belo Horizonte'),
+    (4, 'Porto Alegre'): 4 row(s) affected
+Records: 4  Duplicates: 0  Warnings: 0
+[26, 00:21:41] INSERT INTO Clientes (idCliente, nomeCliente, idadeCliente, idCidade)
+VALUES
+    (1, 'João', 30, 1),
+    (2, 'Maria', 25, 2),
+    (3, 'Pedro', 35, 3),
+    (4, 'Ana', 28, 4),
+    (5, 'Paula', 30, 1): Running...
+[26, 00:21:41] INSERT INTO Clientes (idCliente, nomeCliente, idadeCliente, idCidade)
+VALUES
+    (1, 'João', 30, 1),
+    (2, 'Maria', 25, 2),
+    (3, 'Pedro', 35, 3),
+    (4, 'Ana', 28, 4),
+    (5, 'Paula', 30, 1): 5 row(s) affected
+Records: 5  Duplicates: 0  Warnings: 0
+[27, 00:21:41] INSERT INTO Pedidos (idPedido, idCliente, dataPedido, valorPedido)
+VALUES
+    (101, 1, '2023-07-25', 150.00),
+    (102, 2, '2023-07-26', 250.50),
+    (103, 3, '2023-07-27', 180.75),
+    (104, 1, '2023-07-27', 75.25),
+    (105, 4, '2023-07-28', 300.00),
+    (106, 5, '2023-07-28', 220.00): Running...
+[27, 00:21:41] INSERT INTO Pedidos (idPedido, idCliente, dataPedido, valorPedido)
+VALUES
+    (101, 1, '2023-07-25', 150.00),
+    (102, 2, '2023-07-26', 250.50),
+    (103, 3, '2023-07-27', 180.75),
+    (104, 1, '2023-07-27', 75.25),
+    (105, 4, '2023-07-28', 300.00),
+    (106, 5, '2023-07-28', 220.00): 6 row(s) affected
+Records: 6  Duplicates: 0  Warnings: 0
+[28, 00:22:39] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[28, 00:22:39] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Error Code: 1050. Table 'cidades' already exists
+[29, 00:23:17] COMMIT: Running...
+[29, 00:23:17] COMMIT: 0 row(s) affected
+[30, 00:24:59] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[30, 00:24:59] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Error Code: 1050. Table 'cidades' already exists
+[31, 00:25:05] COMMIT: Running...
+[31, 00:25:05] COMMIT: 0 row(s) affected
+[32, 00:25:23] INSERT INTO Pedidos (idPedido, idCliente, dataPedido, valorPedido)
+VALUES
+    (101, 1, '2023-07-25', 150.00),
+    (102, 2, '2023-07-26', 250.50),
+    (103, 3, '2023-07-27', 180.75),
+    (104, 1, '2023-07-27', 75.25),
+    (105, 4, '2023-07-28', 300.00),
+    (106, 5, '2023-07-28', 220.00): Running...
+[32, 00:25:23] INSERT INTO Pedidos (idPedido, idCliente, dataPedido, valorPedido)
+VALUES
+    (101, 1, '2023-07-25', 150.00),
+    (102, 2, '2023-07-26', 250.50),
+    (103, 3, '2023-07-27', 180.75),
+    (104, 1, '2023-07-27', 75.25),
+    (105, 4, '2023-07-28', 300.00),
+    (106, 5, '2023-07-28', 220.00): Error Code: 1062. Duplicate entry '101' for key 'pedidos.PRIMARY'
+[33, 00:25:26] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[33, 00:25:26] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Error Code: 1050. Table 'cidades' already exists
+[34, 00:25:28] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Running...
+[34, 00:25:28] CREATE TABLE Cidades (
+    idCidade INT PRIMARY KEY,
+    nomeCidade VARCHAR(50)
+): Error Code: 1050. Table 'cidades' already exists
+[35, 00:33:21] SELECT idCliente FROM Pedidos WHERE valorPedido > 500
+LIMIT 0, 1000
+: Running...
+[35, 00:33:21] SELECT idCliente FROM Pedidos WHERE valorPedido > 500
+LIMIT 0, 1000
+: Fetching...
+[35, 00:33:21] SELECT idCliente FROM Pedidos WHERE valorPedido > 500
+LIMIT 0, 1000
+: 0 row(s) returned
+[36, 00:33:36] SELECT idCliente FROM Pedidos WHERE valorPedido > 200
+LIMIT 0, 1000
+: Running...
+[36, 00:33:36] SELECT idCliente FROM Pedidos WHERE valorPedido > 200
+LIMIT 0, 1000
+: Fetching...
+[36, 00:33:36] SELECT idCliente FROM Pedidos WHERE valorPedido > 200
+LIMIT 0, 1000
+: 3 row(s) returned
+[37, 00:39:03] SELECT nomeCliente FROM clientes
+WHERE idCliente IN (
+	SELECT idCliente
+    FROM pedidos
+    WHERE valorPedido > 200
+    )
+LIMIT 0, 1000
+: Running...
+[37, 00:39:03] SELECT nomeCliente FROM clientes
+WHERE idCliente IN (
+	SELECT idCliente
+    FROM pedidos
+    WHERE valorPedido > 200
+    )
+LIMIT 0, 1000
+: Fetching...
+[37, 00:39:03] SELECT nomeCliente FROM clientes
+WHERE idCliente IN (
+	SELECT idCliente
+    FROM pedidos
+    WHERE valorPedido > 200
+    )
+LIMIT 0, 1000
+: 3 row(s) returned
+[38, 00:54:09] SELECT nomeCidade FROM Cidades
+WHERE idCidade IN(
+    SELECT idClientes FROM Clientes 
+	GROUP BY idCidade
+	HAVING AVG(idadeCliente) > 28
+    )
+LIMIT 0, 1000
+: Running...
+[38, 00:54:09] SELECT nomeCidade FROM Cidades
+WHERE idCidade IN(
+    SELECT idClientes FROM Clientes 
+	GROUP BY idCidade
+	HAVING AVG(idadeCliente) > 28
+    )
+LIMIT 0, 1000
+: Error Code: 1054. Unknown column 'idClientes' in 'field list'
+[39, 00:54:13] SELECT nomeCidade FROM Cidades
+WHERE idCidade IN(
+    SELECT idClientes FROM Clientes 
+	GROUP BY idCidade
+	HAVING AVG(idadeCliente) > 28
+    )
+LIMIT 0, 1000
+: Running...
+[39, 00:54:13] SELECT nomeCidade FROM Cidades
+WHERE idCidade IN(
+    SELECT idClientes FROM Clientes 
+	GROUP BY idCidade
+	HAVING AVG(idadeCliente) > 28
+    )
+LIMIT 0, 1000
+: Error Code: 1054. Unknown column 'idClientes' in 'field list'
+[40, 00:54:39] SELECT nomeCidade FROM Cidades
+WHERE idCidade IN(
+    SELECT idCidade FROM Clientes 
+	GROUP BY idCidade
+	HAVING AVG(idadeCliente) > 28
+    )
+LIMIT 0, 1000
+: Running...
+[40, 00:54:39] SELECT nomeCidade FROM Cidades
+WHERE idCidade IN(
+    SELECT idCidade FROM Clientes 
+	GROUP BY idCidade
+	HAVING AVG(idadeCliente) > 28
+    )
+LIMIT 0, 1000
+: Fetching...
+[40, 00:54:39] SELECT nomeCidade FROM Cidades
+WHERE idCidade IN(
+    SELECT idCidade FROM Clientes 
+	GROUP BY idCidade
+	HAVING AVG(idadeCliente) > 28
+    )
+LIMIT 0, 1000
+: 2 row(s) returned
+[41, 00:54:54] SELECT nomeCidade FROM Cidades
+WHERE idCidade IN(
+    SELECT idCidade FROM Clientes 
+	GROUP BY idCidade
+	HAVING AVG(idadeCliente) > 28
+    )
+LIMIT 0, 1000
+: Running...
+[41, 00:54:54] SELECT nomeCidade FROM Cidades
+WHERE idCidade IN(
+    SELECT idCidade FROM Clientes 
+	GROUP BY idCidade
+	HAVING AVG(idadeCliente) > 28
+    )
+LIMIT 0, 1000
+: Fetching...
+[41, 00:54:54] SELECT nomeCidade FROM Cidades
+WHERE idCidade IN(
+    SELECT idCidade FROM Clientes 
+	GROUP BY idCidade
+	HAVING AVG(idadeCliente) > 28
+    )
+LIMIT 0, 1000
+: 2 row(s) returned
